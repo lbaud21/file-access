@@ -1,5 +1,11 @@
+import FileAccessForm from "./Components/FileAccessForm";
+
 function App() {
-  return <>Hello</>;
+  return (
+    <>
+      <FileAccessForm />
+    </>
+  );
 }
 
 export default App;
