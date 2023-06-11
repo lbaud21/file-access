@@ -4,9 +4,10 @@ import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import { filecoin } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
+import { filecoinTestNet } from "./chains";
 
 const { chains, publicClient } = configureChains(
-  [filecoin],
+  [filecoin, filecoinTestNet],
   [publicProvider()]
 );
 
