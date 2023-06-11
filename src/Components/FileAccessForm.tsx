@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+
 export default function FileAccessForm() {
   const [hasAccessToFile, setHasAccessToFile] = useState(false);
 
@@ -15,11 +17,14 @@ export default function FileAccessForm() {
   };
 
   return (
-    <div>
-      <input name="cid" placeholder="file CID" type="text" />
-      <button onClick={() => fetchWalletHasAccessToFile()}>
-        Connect wallet
-      </button>
+    <div className="flex flex-col">
+      <div>
+        <input name="cid" placeholder="file CID" type="text" />
+      </div>
+      <div>
+        <ConnectButton />
+      </div>
+
       {!hasAccessToFile && <button onClick={() => pay()}>Pay</button>}
       {hasAccessToFile && <div>This is a file </div>}
     </div>
