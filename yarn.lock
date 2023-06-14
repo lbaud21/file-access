@@ -2169,6 +2169,11 @@ chokidar@^3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
+chrome-types@^0.1.204:
+  version "0.1.204"
+  resolved "https://registry.yarnpkg.com/chrome-types/-/chrome-types-0.1.204.tgz#9789d7ffd5fb4387fbada166fdab64ab8fbeb9fd"
+  integrity sha512-w+GgaesqMiRvlxJTqmEv0691FsFOsJYCFGsV8VWkbONbcWNaRs2AXaitdVW34VdXSyzSr/pOjSFKwqK66GARww==
+
 client-only@^0.0.1:
   version "0.0.1"
   resolved "https://registry.npmjs.org/client-only/-/client-only-0.0.1.tgz"

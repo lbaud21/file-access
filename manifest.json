@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Only File",
+  "description": "Filecoin IPFS gated file reader",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "only_file_logo_blue.png",
+    "32": "only_file_logo_blue.png",
+    "48": "only_file_logo_blue.png",
+    "128": "only_file_logo_blue.png"
+  }
+}
