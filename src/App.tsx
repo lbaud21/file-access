@@ -1,19 +1,19 @@
 import FileAccessForm from "./Components/FileAccessForm";
 import "@rainbow-me/rainbowkit/styles.css";
-import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
-import { filecoin } from "wagmi/chains";
+import { filecoin, filecoinCalibration } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
-import { filecoinTestNet } from "./chains";
+import { GlobalStyle } from "./Components/FileAccessForm.style";
+import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import { MetaMaskConnector } from "wagmi/connectors/metaMask";
 
 const { chains, publicClient } = configureChains(
-  [filecoin, filecoinTestNet],
+  [filecoin, filecoinCalibration],
   [publicProvider()]
 );
 
 const { connectors } = getDefaultWallets({
-  appName: "HackFS",
-  projectId: import.meta.env.VITE_WALLET_CONNECT,
+  appName: "Only File",
   chains,
 });
 
@@ -27,6 +27,7 @@ function App() {
   return (
     <WagmiConfig config={wagmiConfig}>
       <RainbowKitProvider chains={chains}>
+        <GlobalStyle />
         <FileAccessForm />
       </RainbowKitProvider>
     </WagmiConfig>
