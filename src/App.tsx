@@ -1,9 +1,9 @@
-import FileAccessForm from "./Components/FileAccessForm";
+import FileAccessForm from "./components/FileAccessForm";
 import "@rainbow-me/rainbowkit/styles.css";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import { filecoin, filecoinCalibration } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
-import { GlobalStyle } from "./Components/FileAccessForm.style";
+import { GlobalStyle } from "./components/FileAccessForm.style";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 
 const { chains, publicClient } = configureChains(
