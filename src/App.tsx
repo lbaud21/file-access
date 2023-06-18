@@ -5,7 +5,6 @@ import { filecoin, filecoinCalibration } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 import { GlobalStyle } from "./Components/FileAccessForm.style";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
-import { MetaMaskConnector } from "wagmi/connectors/metaMask";
 
 const { chains, publicClient } = configureChains(
   [filecoin, filecoinCalibration],

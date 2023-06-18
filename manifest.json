@@ -11,5 +11,10 @@
     "32": "only_file_logo_blue.png",
     "48": "only_file_logo_blue.png",
     "128": "only_file_logo_blue.png"
+  },
+  "web_accessible_resources": [],
+  "externally_connectable": {
+    "matches": ["https://metamask.io/*"],
+    "ids": ["*"]
   }
 }
